@@ -1,4 +1,4 @@
-# Scrapy settings for glasdoor_crawler project
+# Scrapy settings for glassdoor_crawler project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'glasdoor_crawler'
+BOT_NAME = 'glassdoor_crawler'
 
-SPIDER_MODULES = ['glasdoor_crawler.spiders']
-NEWSPIDER_MODULE = 'glasdoor_crawler.spiders'
+SPIDER_MODULES = ['glassdoor_crawler.spiders']
+NEWSPIDER_MODULE = 'glassdoor_crawler.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'glasdoor_crawler.middlewares.GlasdoorCrawlerSpiderMiddleware': 543,
+#    'glassdoor_crawler.middlewares.glassdoorCrawlerSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'glasdoor_crawler.middlewares.GlasdoorCrawlerDownloaderMiddleware': 543,
+#    'glassdoor_crawler.middlewares.glassdoorCrawlerDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'glasdoor_crawler.pipelines.MongoPipeline': 300,
+    'glassdoor_crawler.pipelines.MongoPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

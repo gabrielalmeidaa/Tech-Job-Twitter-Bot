@@ -9,7 +9,7 @@ import pymongo
 from itemadapter import ItemAdapter
 
 
-class GlasdoorCrawlerPipeline:
+class GlassDoorCrawlerPipeline:
     def process_item(self, item, spider):
         return item
 

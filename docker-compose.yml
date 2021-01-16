@@ -1,0 +1,12 @@
+version: '3.2'
+services:
+  glassdoor_crawler:
+    build:
+      context: .
+      dockerfile: glassdoor_crawler/Dockerfile
+    volumes:
+      - ./.:/tech_job_twitter_bot
+      - "/etc/localtime:/etc/localtime:ro"
+    stdin_open: true
+    tty: true
+    network_mode: "host"
