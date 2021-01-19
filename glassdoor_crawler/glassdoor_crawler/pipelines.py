@@ -15,7 +15,6 @@ class GlassDoorCrawlerPipeline:
 
 
 class MongoPipeline:
-
     collection_name = 'scrapy_items'
 
     def __init__(self, mongo_uri, mongo_db):
